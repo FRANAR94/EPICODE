@@ -1,0 +1,242 @@
+<!-- sito web per agenzia viaggi
+1)navbar ogni sezione pag ad elem manu 
+2)logo navbar
+3)sezione jumbotron con nome e payoff agenzia
+4)sezione offerta settimana
+- 4 destinazione 
+4 xl  3 m 2 sl
+5)sezione welcom summer
+- 6 destinazioni
+6 xl 3 md 2 sm 
+6)sezione offerta del giorno
+66% imagine dest 33% nome data prezzo  descr luogo
+7)se schermo small rendi invisibile offerta giorno
+8)aggiungi ombra a card welcom summer
+9)immagini dest last minuti sottoforma di card
+10) testimonial - utente trova feedback di utenti fittizzi
+11)crea footer con dati agenzia e bottone contattaci
+
+EXTRA
+
+1)CREA UN BOTTONE VICINO AD OGNI SEZIONE PER COLLASSARLA E RIPARIRLA SE PREMUTO CON js
+2)CREA LA POSSIBILITA DI CONTARE IL NUMERO DI VIAGI PRESENTI SULLA PAGINA
+3)CREA UN MODALE CON UN MESSAGGIO E UN CAMPO MAIL 
+4)SE UTENTE CLICCA SU CONTATTACI FAI IN MODO CHE IL MODALE VENGA VISUALIZZATO
+5)CREA UNA FUNZIONE CHE RIMUOVA TUTTE LE CARD DI UNA PAGINA  -->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenzia Viaggi</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="stile.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center p-2">
+            <i class="bi bi-suitcase-fill" style="font-size:25px; color:red;"></i>
+            <a class="navbar-brand" href="#">Viaggia Con Noi!</a>
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offerta-settimana">Offerta Settimana</a></li>
+          <li class="nav-item"><a class="nav-link" href="#welcome-summer">Welcome Summer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offerta-giorno">Offerta Giorno</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contattaci">Contattaci</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center" id="home">
+    <img src="https://cdn5.acolore.com/disegni/colori/202036/un-aereo-passeggeri-veicoli-aeroplani-1180642.jpg" alt="img">
+    <h1 class="display-4">Benvenuti nell'Agenzia Viaggi</h1>
+    <p class="lead">Scopri le migliori offerte per le tue vacanze</p>
+  </div>
+
+  <!-- Sezione Offerta Settimana -->
+  <div class="d-flex justify-content-center align-items-center text-center gap-3">
+    <h2 class="mb-0">Offerte della Settimana</h2>
+    <button class="btn btn-secondary" onclick="toggleSection('offerta-settimana')">
+      Toggle
+    </button>
+  </div>
+  <section id="offerta-settimana" class="container my-5">
+    <div class="row g-3">
+      <!-- Prima card -->
+      <div class="col-12 col-md-4 col-xl-3">
+        <div class="card h-100">
+          <img src="https://caminoincamachupicchu.org/cmingutd/wp-content/uploads/2021/06/machu-picchu-llama.jpg" class="card-img-top img-fluid" alt="Destinazione 1">
+          <div class="card-body">
+            <h5 class="card-title">Machu Picchu, Perù</h5>
+            <p class="card-text">
+                Descrizione: Machu Picchu è una delle meraviglie del mondo moderno, un'antica città inca situata a 2.430 metri di altitudine, nel cuore delle Ande. Questo sito archeologico è famoso per la sua straordinaria bellezza e la sua misteriosa storia. Machu Picchu è anche un simbolo della cultura inca e un luogo di grande spiritualità.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seconda card -->
+      <div class="col-12 col-md-4 col-xl-3">
+        <div class="card h-100">
+          <img src="https://www.archeoroma.it/wp-content/uploads/colosseo-roma-anfiteatro-flavio-558x400.jpg" class="card-img-top img-fluid" alt="Roma - colosseo">
+          <div class="card-body">
+            <h5 class="card-title">Colosseo, Roma</h5>
+            <p class="card-text">
+                Il Colosseo di Roma è uno dei monumenti più iconici della storia. Costruito nel I secolo d.C., questa arena gigante era il luogo di combattimenti tra gladiatori e spettacoli pubblici.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terza card -->
+      <div class="col-12 col-md-4 col-xl-3">
+        <div class="card h-100">
+          <img src="https://www.cosenostre-online.it/wp-content/uploads/2019/04/27_grande-muraglia.jpg" class="card-img-top img-fluid" alt="Destinazione 3">
+          <div class="card-body">
+            <h5 class="card-title">Grande Muraglia Cinese</h5>
+            <p class="card-text">
+                La Grande Muraglia Cinese si estende per oltre 21.000 chilometri ed è uno degli edifici più imponenti e suggestivi della storia, simbolo della difesa dell'antica Cina.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quarta card -->
+      <div class="col-12 col-md-4 col-xl-3">
+        <div class="card h-100">
+          <img src="https://travel.thewom.it/content/uploads/sites/4/2022/09/isole-cicladi.jpeg" class="card-img-top img-fluid" alt="Destinazione 4">
+          <div class="card-body">
+            <h5 class="card-title">Santorini, Grecia</h5>
+            <p class="card-text">
+                Santorini è una delle isole più famose della Grecia, famosa per le sue case bianche e blu, le viste mozzafiato sul mare e i tramonti spettacolari.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sezione Welcome Summer -->
+  <section id="welcome-summer" class="container my-5">
+    <h2 class="text-center">Welcome Summer</h2>
+    <div class="row">
+      <!-- Aggiungi 6 destinazioni responsive -->
+      <div class="col-12 col-md-6 col-xl-2">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Destinazione">
+          <div class="card-body">
+            <h5 class="card-title">Destinazione</h5>
+            <p class="card-text">Descrizione</p>
+          </div>
+        </div>
+      </div>
+      <!-- Aggiungi altre destinazioni qui... -->
+    </div>
+    <button class="btn btn-secondary mt-3" onclick="toggleSection('welcome-summer')">Toggle</button>
+  </section>
+
+  <!-- Sezione Offerta del Giorno -->
+  <section id="offerta-giorno" class="container my-5 offerta-giorno">
+    <img src="https://via.placeholder.com/600x400" alt="Offerta" />
+    <div class="info">
+      <h4>Destinazione</h4>
+      <p>Data: 2022-12-25</p>
+      <p>Prezzo: €499</p>
+      <p>Descrizione luogo</p>
+    </div>
+    <button class="btn btn-secondary mt-3" onclick="toggleSection('offerta-giorno')">Toggle</button>
+  </section>
+
+  <!-- Sezione Testimonial -->
+  <section id="testimonial" class="container my-5">
+    <h2 class="text-center">Testimonial</h2>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">"Viaggio fantastico!" - Utente Fittizio 1</p>
+          </div>
+        </div>
+      </div>
+      <!-- Aggiungi altri feedback qui... -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contattaci" class="bg-light text-center py-4">
+    <p>Agenzia Viaggi - Contattaci: info@agenziaviaggi.it</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contattaci</button>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contattaci</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="contactForm">
+            <input type="email" class="form-control" placeholder="Inserisci la tua email" required>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+          <button type="submit" form="contactForm" class="btn btn-primary">Invia</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Funzione per contare i viaggi
+    let viaggiCount = 0;
+
+    function countViaggi() {
+      viaggiCount = document.querySelectorAll('.card').length;
+      console.log("Numero di viaggi presenti: " + viaggiCount);
+    }
+
+    // Funzione per toggle sezione
+    function toggleSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.classList.toggle('d-none');
+    }
+
+    // Rimuovere tutte le card
+    function removeAllCards() {
+      document.querySelectorAll('.card').forEach(card => card.remove());
+    }
+
+    // Chiamata per contare i viaggi al caricamento
+    window.onload = countViaggi;
+  </script>
+
+</body>
+
+</html>

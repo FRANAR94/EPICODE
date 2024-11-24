@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5p;
+    margin: 0 5px;
+    height: 25px;
+}
+
+nav button {
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(117, 174, 122), rgb(195, 204, 100) );
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+section div{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(173, 217, 176) ;
+    width: 700px;
+    margin: 20px;
+    border-radius: 15px;
+    padding:10px;
+}

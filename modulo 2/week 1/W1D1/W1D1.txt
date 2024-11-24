@@ -1,0 +1,9 @@
+1. Cos'è un algoritmo ?
+   - Un algoritmo è una sequenza di azione che compie un soggetto per         raggiungere un risultato.
+
+2. Cos'è una variabile?
+   - Una variabile è un contenitore di informazioni qualsiasi, può contenere informazioni di tipo testo, di tipo numerico ecc, si puà dichiarare, ovvero, esiste un contenitore pronto a contenere un informazione e successivamente ci si può assegnare un valore, che sia un testo, un numero ecc.
+
+3. differenza tra undefined e null
+   - entrambi i termini indicano l'assenza di valore in una variabile, ma la differenza è che mentre undefined viene assegnato automaticamente da js quando viene dichiarata una variabile ma non gli viene assegnato alcun valore, mentre null lo assegnamo noi alla variabile come per dire intenzionalmente che la variabile stessa non deve contenere valore.
+   

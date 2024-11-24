@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrazioneUt</title>
+    <link rel="stylesheet" href="stile.css"></link>
+    <link rel="icon" type="image/x-icon" href="immagini/imgNota.jpeg">
+
+
+</head>
+
+<body>
+
+    <h1>Registrazione Utente</h1>
+        
+    <form onsubmit="alert('registrazione inviata')">
+
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div>
+                <label for="cognome">Cognome:</label><br>
+                <input type="text" id="cognome" name="cognome">
+            </div>
+
+            <div>
+                <label for="email">Inserisci email:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="pass">Password:</label><br>
+                <input type="password" id="pass" name="password">
+            </div>
+
+            <div>
+                <label for="nascita">Data di nascita:</label><br>
+                <input type="date" id="nascita" nome="AnnoDiNascita">
+            </div>
+
+            <div>
+                <label for="tel">Cellulare:</label><br>
+                <input type="number" id="tel" name="telefono">
+            </div>
+
+            <div>
+                <p>Seleziona i tuoi generi musicali preferiti:</p>
+
+                <input type="checkbox" id="rock" name="rock" value="Rock">
+                <label for="rock">Rock</label><br>
+                <input type="checkbox" id="pop" name="pop" value="Pop">
+                <label for="pop">Pop</label><br>
+                <input type="checkbox" id="clas" name="clas" value="Classica">
+                <label for="clas">Classica</label><br>
+                <input type="checkbox" id="blues" name="blues" value="Blues">
+                <label for="blues">Blues</label><br>
+                <input type="checkbox" id="jazz" name="jazz" value="Jazz">
+                <label for="jazz">Jazz</label><br>
+            </div>
+
+            <div>
+
+                <p>
+                Termini e condizioni:
+                </p>
+                
+                <input type="radio" id="acc" name="condizioni" value="accetta">
+                <label for="acc">Accetta termini e condizioni</label><br>
+                <input type="radio" id="dec" name="condizioni" value="declina">
+                <label for="dec">Declina termini e condizioni</label>
+
+            </div>
+            
+            <div id="bot">
+                <button type="submit">Iscriviti</button>
+            </div>  
+
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Mockup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="stile3.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid px-md-5 px-sx-5 px-3">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-2 col-md-3 col-6">
+                    <img class="img-fluid" src="assets/logo-pink.png" alt="airbnb-logo" width="120" height="120">
+                </div>
+                <div class="col-xl-6 col-lg-8 col-md-6 d-flex justify-content-center align-items-center gap-4 d-md-flex d-none">
+                    <!-- <a href="#">Place to stay</a>
+                    <a href="#">Experiences</a>
+                    <a href="#">Online Experiences</a> -->
+                </div> 
+                <div class="col-xxl-3 col-xl-3 col-lg-2 col-md-3 col-6 d-flex align-items-center align-items-and justify-content-end gap-3">
+                    <a class="d-none d-xl-block" href="#">become a host</a>
+                    <i class="bi bi-globe fs-4 text-black"></i>
+                    <div class="d-flex rounded-5 justify-content-center gap-2">
+                        <i class="bi bi-list fs-3"></i>
+                        <i class="bi bi-person-circle fs-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-4 col-lg-8">
+            <div class="d-flex justify-content-start align-items-center">
+                <h1 class="col-12">Blarmor home</h1>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="text-muted"><span>4.6 ratings • Inverness</span></div>
+                <div class="text-muted">
+                    <span class="mx-3"><i class="bi bi-box-arrow-up"></i>share</span>
+                    <span><i class="bi bi-suit-heart"></i>save</span>
+                </div>
+            </div>
+
+        <!-- Gallery -->
+        <div id="gallery-container">
+            Questa sezione sarà sostituita dinamicamente con il carosello su schermi piccoli 
+            <div class="row g-3 property-gallery mt-2 gallery">
+                <div class="col-md-6 Mainmg">
+                    <img src="assets/1.webp" alt="Main Image" class="img-hover-dark">
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <img src="assets/2.webp" alt="Gallery Image" class="img-hover-dark">
+                        </div>
+                        <div class="col-md-6 rtb">
+                            <img src="assets/3.webp" alt="Gallery Image" class="img-hover-dark">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/4.webp" alt="Gallery Image" class="img-hover-dark">
+                        </div>
+                        <div class="col-md-6 rbb">
+                            <img src="assets/5.webp" alt="Gallery Image" class="img-hover-dark">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- main -->
+        <div class="row mt-5">
+            <div class="col-lg-8 details-section">
+                <h3>House - Host: Erica</h3>
+                <p>3 rooms • Perfect place to visit the Loch Ness and go looking for Nessie.</p>
+                <p class="">Show host details</p>
+
+                <!-- Contatti -->
+                <ul class="list-unstyled mt-4">
+
+                    <li class="d-flex justify-content-start align-items-center my-3">
+                        <i class="bi bi-house-door"></i> 
+                        <div class=" mx-3">
+                            <span>House:</span><br>
+                            <span>You will have the whole premise for you.</span>
+                        </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start align-items-center my-3">
+                        <i class="bi bi-shield-check"></i>
+                        <div class=" mx-3">
+                            <span>Advanced Cleaning Methods:</span><br>
+                            <span>The host commits to 5-step cleaning.</span>
+                        </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start align-items-center my-3">
+                        <i class="bi bi-geo-alt"></i>
+                        <div class=" mx-3">
+                            <span>Inverness:</span><br>
+                            <span>5 Kilometers Rad.</span>
+                        </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start align-items-center my-3">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <div class=" mx-3">
+                            <span>Cancellation Terms:</span><br>
+                            <span>Check cancellation policies.</span>
+                        </div>
+                    </li>
+
+                    <li class="d-flex justify-content-start align-items-center my-3">
+                        <i class="bi bi-info-circle"></i>
+                        <div class=" mx-3">
+                            <span>Rules Of The House:</span><br>
+                            <span>No parties, animals, or smoking.</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Prenotazione -->
+            <div class="col-lg-4">
+                <div class="booking-box">
+                    <h5>Add dates to see the prices</h5>
+                    <i class="bi bi-star-fill text-danger"></i> <span class="text-muted ml-2">4.6 (6 reviews)</span>
+                    <form>
+                        <div class="my-3">
+                            <input type="date" class="form-control" placeholder="Check-in Date">
+                        </div>
+                        <div class="mb-3">
+                            <input type="date" class="form-control" placeholder="Check-out Date">
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" placeholder="Guests">
+                        </div>
+                        <button class="btn btn-danger w-100">Cancel Booking</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- form -->
+            <h5 class="mt-4">Leave a Review</h5>
+            <form class="row col-10">
+                    <div class="mb-3 col-lg-8">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="mb-3 col-lg-4">
+                        <label for="rating" class="form-label">Rating</label>
+                        <select class="form-select" id="rating">
+                            <option value="1">★</option>
+                            <option value="2">★★</option>
+                            <option value="3">★★★</option>
+                            <option value="4">★★★★</option>
+                            <option value="5">★★★★★</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="review" class="form-label">Review</label>
+                        <textarea class="form-control" id="review" rows="3" placeholder="Type in your review"></textarea>
+                    </div>
+            </form>
+
+            <!-- recensioni -->
+            <div class="review-section mt-5">
+                    <h5>Reviews</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center review-card my-3">
+                            <img src="assets/propic.png" alt="Reviewer">
+                            <div class="ms-3">
+                                <p><strong>Noemi</strong> • Jan 2021</p>
+                                <p>Great place! Very cozy and clean.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center review-card my-3">
+                            <img src="assets/propic.png" alt="Reviewer">
+                            <div class="ms-3">
+                                <p><strong>Enrico</strong> • Jan 2021</p>
+                                <p>Perfect location for a weekend getaway.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>        
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="din.js"></script>
+</body>
+</html>

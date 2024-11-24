@@ -1,0 +1,93 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+.Topbar {
+    height: 17vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(to top right, rgb(0, 5, 40), rgb(28, 28, 70));
+  }
+
+.content {
+    background-image: linear-gradient(to top right, rgb(0, 5, 40), rgb(28, 28, 70));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.item-link{
+    background-image: linear-gradient(to top right, rgb(43, 43, 104), rgba(255, 20, 147,0.8));
+    border: 2px solid black;
+    width: 40%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+.cont {
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descrizione{
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to top right, rgb(43, 43, 104), rgb(204, 45, 130));
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 20px;
+    color: whitesmoke;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+h3 {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: cursive;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+h4 {
+    color: whitesmoke;
+    font-size: 15px;
+    margin-left: 5px;;
+
+}
+
+img {
+    margin-left: 10px;
+}
+
+.item-link:hover{
+    opacity: 0.7;
+}
+

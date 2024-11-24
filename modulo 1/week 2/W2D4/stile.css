@@ -1,0 +1,393 @@
+body{
+    margin: 0;
+}
+
+i{
+    color: rgb(86, 86, 86);
+}
+/*HEADER*/
+
+header{
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(209, 206, 206);
+    color: rgb(26, 26, 26);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding:5px;
+    gap:10px;
+}
+
+.logo img{
+    width: 150px;
+    padding:8px 15px;
+}
+
+.logoserch{
+    width: 200px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 0px 10px;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoserch input{
+    width: 200px;
+    border:none;
+    background-color: whitesmoke;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.icon{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+header i{
+    font-size: 25px;
+}
+
+/*FINE HEADER*/
+
+
+/*MAIN*/
+
+main{
+    margin: 0 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*SECTION*/
+
+section{
+    margin: 0 7%;
+    width: 60%;
+}
+
+/*NAV*/
+
+nav{
+    margin: 20px 0;
+    padding:15px 0;
+    border-bottom: 1px solid rgb(209, 206, 206);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    z-index: 9999;
+    color:rgb(84, 84, 84);
+}
+
+/*FINE NAV*/
+
+.card{
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(209, 206, 206);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.p_card{
+    width: 70%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px;
+}
+.titolocard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titolocard img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.titolocard p{
+    color:rgb(209, 206, 206);
+}
+
+.titolocard p span{
+    color:black;
+}
+
+.corpocard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.img_card img{
+    height: 20vh;
+    width: 100%;
+}
+
+.descriz_corpocard h2{
+    margin: 5px 0 ;
+}
+
+.footercard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.elem_footercard{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.fo-elem_footercard i{
+    font-size: 20px;
+}
+
+/*FINE SECTION*/
+
+
+/*ASIDE*/
+
+
+aside{
+    width: 40%;
+    border-left: 1px solid rgb(209, 206, 206);
+    padding-left: 20px;
+    position: sticky;
+    top:-45%;
+    bottom:0;
+    overflow: auto;
+    height: 1100px;
+}
+
+/*STAFFPICKS*/
+
+.staffpicks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.staffpicks h4{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.staffpicks a{
+    color:green;
+    text-decoration: none;
+}
+
+.elementstaffp{
+    margin: 20px 0;
+}
+.elementstaffp h3{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.tit_elemstaffp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tit_elemstaffp img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.tit_elemstaffp p{
+    margin: 0;
+    padding-left: 5px;
+    align-self: flex-end;
+    color:rgb(209, 206, 206);
+}
+
+.tit_elemstaffp p span{
+    color:black;
+}
+
+/*TERMINE STAFFPICKS*/
+
+/*TOPICS*/
+
+.topic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
+.topic h4{
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.topic a{
+    margin-top: 15px;
+    color:green;
+    text-decoration: none;
+}
+
+.corpo_topic{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.corpo_topic span{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+/*TERMINE TOPICS*/
+
+/*FOLLOW*/
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
+.cardfollow{
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    gap:10px;
+    margin-bottom: 20px;
+    width:800px;
+    color:rgb(99, 99, 99);
+}
+
+.cardfollow img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.footercf{
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 20px;
+    color:rgb(68, 68, 68);
+}
+
+.cf-center{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    width:200px;
+}
+
+.top_span{
+    font-weight: bold;
+    font-size: 17px;
+    color:black;
+}
+
+.follow a{
+    color:green;
+    text-decoration: none;
+}
+
+/*TERMINE FOLLOW*/
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap:10px;
+}
+
+.help{
+    font-size: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    color: rgb(68, 68, 68);
+    gap:5px;
+}
+
+/*TERMINE FOOTER*/
+
+/*TERMINE ASIDE*/
+
+/*FINE MAIN*/
+
+/*HOVER*/
+
+header img,i:hover{
+    color: black;
+    cursor:pointer;
+}
+
+nav span,i:hover{
+    color: black;
+    cursor:pointer;
+}
+
+.titolocard span:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.elementstaffp:hover{
+    cursor:pointer;
+    color:black;
+}
+
+.corpo_topic span:hover{
+    cursor:pointer;
+}
+
+.cardfollow:hover{
+    cursor:pointer;
+}
+
+.help span:hover{
+    cursor:pointer;
+}
+
+/*TERMINE HOVER*/

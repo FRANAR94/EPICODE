@@ -1,0 +1,32 @@
+/* Sezione Welcome Summer - Ombra alle card */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sezione Offerta del Giorno: 66% immagine, 33% testo */
+.offerta-giorno {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offerta-giorno img {
+  width: 66%;
+  object-fit: cover;
+}
+
+.offerta-giorno .info {
+  width: 33%;
+}
+
+.card-img-top {
+    height: 200px; /* Imposta una altezza uniforme per tutte le immagini */
+    object-fit: cover; /* Questo mantiene le proporzioni dell'immagine senza deformarla */
+}
+
+/* Nascondi se schermo small */
+@media (max-width: 576px) {
+  .offerta-giorno {
+    display: none;
+  }
+}

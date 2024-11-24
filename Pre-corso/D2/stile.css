@@ -1,0 +1,35 @@
+body {
+    background-color: whitesmoke;
+    margin:0px;
+}
+
+div {
+    padding:5px;
+    margin: 10px;
+    background-color: whitesmoke;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: green;
+    max-width: 30%;
+}
+
+h1 {
+    color: green;
+    padding-left: 70px;
+}
+
+div p {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+button {
+    font-size: large;
+    border: 1px solid green;
+    border-radius: 7px;
+    background-color: whitesmoke;
+}
+button:hover {
+    background-color: green;
+}
+

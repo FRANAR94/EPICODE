@@ -1,0 +1,285 @@
+/* generici */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+article{
+    margin-top: 30px;
+}
+
+a{
+    color: white;
+}
+
+/* termine generici */
+
+
+/* header + nav */
+
+header{
+    background-color: #222f3e;
+    height: 60px;
+}
+
+.logo img{
+    height: 40px;
+    padding:10px;
+    padding-left: 2%;
+}
+
+nav {
+    background-color:#364759;
+    height: 30px;
+    padding-top:10px;
+    padding-left: 2%;
+}
+
+nav span {
+    color: white;
+    padding:5px;
+}
+
+/* termine header + nav */
+
+
+/* titolo + banner */
+
+.top-title{
+    height: 35px;
+    margin-top: 30px;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.top-title span{
+    display: block;
+    position: absolute;
+    padding-left:42%;
+    padding-top: 8px;
+}
+
+.banner{
+    margin-top:30px;
+    height: 120px;
+    background-image: url(assets/bg-image.png);
+    position: relative;
+}
+
+.scritta-banner {
+    position: absolute;
+    margin-left: 41%;
+    margin-top: 8px;;
+    color:whitesmoke;
+    text-align: center;
+}
+/* termine titolo + banner */
+
+
+/* sezione galleria foto*/
+
+.gall-foto {
+    margin-top: 31px;
+    background-color: white;
+}
+
+.spn_img{
+    margin-left: 10px;
+    color:rgb(0, 123, 255);
+    font-size: 15px;
+}
+
+.tit-foto{
+    height: 40px;
+    position: relative;
+}
+
+.tit-foto p {
+    position:absolute;
+    margin-left:25px;
+    margin-top: 15px;
+}
+
+.show-foto{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.show-foto img{
+    margin:10px;
+    display: block;
+    align-content: center;
+    width: 22%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(125, 123, 123, 0.3)
+}
+
+/* termine sezione galleria foto */
+
+
+/* EXTRA */
+
+.contenitore-extra{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-ogg{
+    background-color: white;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-titolo{
+    height: 15%;
+}
+
+.card-titolo h2{
+    margin: 0px;
+    padding:20px;
+    font-size: 18px;
+}
+.contenuto-card{
+    padding-left:20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card{
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 80%;
+}
+
+.cover1{
+    background-image: url(assets/img_19.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.cover2{
+    background-image: url(assets/img_22.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.cover3{
+    background-image: url(assets/img_11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.cover1 img{
+    width:40%;
+    transform: translate(40%, 50%);
+}
+
+.cover2 img{
+    width:40%;
+    transform: translate(40%, 50%);
+}
+
+.cover3 img{
+    width:40%;
+    transform: translate(40%, 50%);
+}
+
+
+.footer-card{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-card span{
+    color: rgb(0, 119, 255);
+    padding-left: 20px;
+}
+
+
+/* TERMINE EXTRA */
+
+
+/* imagini fondo */
+
+.under-img img{
+    height:350px;
+    width: 100%;
+}
+
+.under-img p{
+    text-align: center;
+}
+
+/* termine imagini fondo */
+
+
+/* footer */
+
+.gotop{
+    height:40px;
+    background-color: #364759;
+    text-align: center;
+}
+
+.gotop span{
+    display: block;
+    padding-top: 10px;
+}
+
+.fondopag{
+    background-color: #222f3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondopag img {
+    width:150px;
+    padding: 30px;
+}
+
+/* termine footer */
+
+

@@ -1,0 +1,37 @@
+/*esercizio 1*/
+.jumbotron h1{}
+
+/*esercizio 2*/
+nav > *{}
+
+/*esercizio 3*/
+.jumbotron .font-weight-bold{}
+
+/*esercizio 4*/
+.blog-main .blog-post:first-of-type{}
+
+/*esercizio 5*/
+.blog-main .blog-post:first-of-type h2 {
+    color: red;
+}
+
+/*esercizio 6*/
+.navbar span:nth-child(even){}
+
+/*esercizio 7*/
+.blog-sidebar .list-unstyled.mb-0 li{}
+
+/*esercizio 8*/
+.blog-main .blog-post:nth-of-type(2) .blog-post-meta a{}
+
+/*esercizio 9*/
+.blog-main .blog-post:nth-of-type(3) ol li:nth-child(2){}
+
+/*esercizio 10*/
+.float-right.mb-3.mr-3{}
+
+/*esercizio 11*/
+.blog-pagination .btn-outline-secondary{}
+
+/*esercizio 12*/
+.blog-footer p a:nth-of-type(2){}

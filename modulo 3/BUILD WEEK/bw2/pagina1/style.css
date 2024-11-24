@@ -1,0 +1,409 @@
+html {
+    scroll-behavior: smooth; /* Rende lo scorrimento fluido */
+    
+  }
+
+#entry {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    height: 100vh;
+    background-image: url(assets/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    margin-top: -200;
+}
+
+
+main {
+    margin-top: -130px;
+}
+
+/*----------------------------------------*/
+/*----------------Nav Bar-----------------*/
+/*----------------------------------------*/
+
+header {
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 500;
+    
+}
+
+
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header div > div :last-child div{
+    background-color:rgb(177, 177, 177);
+    width: 73px;
+    height: 35px;
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+/* header div > div :last-child div:hover {
+    box-shadow: 0px 2px 7px rgb(43, 43, 43);
+    transform: scale(0.98);
+} */
+
+@media (max-width: 830px) {
+    header a {
+        display: none;
+    }
+}
+
+i {
+    cursor: pointer;
+}
+
+/*----------------------------------------*/
+/*----------------Mid Blok-----------------*/
+/*----------------------------------------*/
+
+#midBlok {
+    transition: transform 1s ease-in-out, top 1s ease-in-out;
+}
+
+/*----------------------------------------*/
+/*----------------Search Bar--------------*/
+/*----------------------------------------*/
+
+searchbar {
+    display: flex;
+   /*  width: max-content; */
+    justify-content: center;
+    margin-top: 50px;
+    position: sticky;
+    margin: auto;
+    top: 0;
+    z-index: 700;
+    transition: transform 1s ease-in-out, top 1s ease-in-out;
+
+    
+    
+}
+
+#searchBarBox {
+    /* background-color: yellowgreen; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    width: 700px;
+    height: 60px;
+    padding-right: 5px;
+    padding-left: 30px;
+    box-shadow: 0px 2px 10px rgb(190, 190, 190);
+    background-color: whitesmoke;
+}
+
+/* #searchBarBoxNew {
+    background-color: yellowgreen;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    width: 700px;
+    height: 60px;
+    padding-right: 5px;
+    padding-left: 30px;
+    box-shadow: 0px 2px 10px rgb(190, 190, 190);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+} */
+
+#searchBarBox p {
+    margin: 0;
+}
+
+.one{
+    width: 20%;
+}
+.tow{
+    width: 10%;
+}
+.three{
+    width: 10%;
+}
+.four{
+    width: 30%;
+}
+.five {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: #e41c5d;
+    border-radius: 100px;
+}
+
+
+.one, .tow, .three{
+    display: flex;
+    flex-direction: column;
+}
+
+.four{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.guest {
+    display: flex;
+    flex-direction: column;
+}
+
+#searchBarBox > div p:first-child {
+    font-size: 14px;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#searchBarBox > div p:last-child {
+    font-size: 12px;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*----------------------------------------*/
+/*----------------Headline Home + Button-----------------*/
+/*----------------------------------------*/
+
+
+#entry > div:last-child {
+    height: 100vh;
+    padding-left: 90px; 
+}
+
+#entry >div:last-child h1{
+    color: whitesmoke;
+    font-size: clamp(5rem, 4.1071rem + 4.7619vw, 7.5rem);
+    font-weight: 700;
+}
+
+#entry >div:last-child .button{
+    color: whitesmoke;
+    background-color:#e41c5b63;
+    width: 270px;
+    border-radius: 100px;
+    height: 50px;
+    border: inset; 
+    box-shadow: 0px 2px 7px #e41c5b63;
+}
+
+#entry >div:last-child .button a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: clamp(1rem, 0.8661rem + 0.7143vw, 1.375rem);
+    font-weight: 400;  
+}
+
+/*----------------------------------------*/
+/*----------------Icon carosel-----------------*/
+/*----------------------------------------*/
+
+
+#icons {
+    height: 100px;
+    position: sticky;
+    top: 100px;
+    background-color: white;
+    height: 100px;
+    z-index: 600;
+    
+
+}
+
+
+.boxIcon {
+    width: 120px;
+    display: flex;
+}
+
+.boxIcon:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 0px #e41c5d;
+    border-bottom: 1px solid #e41c5d;   
+}
+
+.boxIcon p {
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+
+
+.carousel-control-prev, .carousel-control-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    position: absolute;
+    border: 2px solid black;
+}
+
+.carousel-control-prev {
+    left: 0;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    color: #000000;  
+}
+
+.carousel-control-next {
+    right: 0;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    color: #000000;
+}
+
+.bi-chevron-right, .bi-chevron-left {
+    -webkit-text-stroke: 2px black;
+}
+
+#carouselIcons button {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+/*----------------------------------------*/
+/*----------------Logger Account box -----------------*/
+/*----------------------------------------*/
+
+#logger {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 330px;
+    width: 240px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    box-shadow: 0px 2px 7px rgb(148, 148, 148);
+    padding: 30px 30px;
+    background-color: white;
+    
+}
+
+#logger p  {
+    font-size: 16px
+}
+
+#logger a  {
+    color: black;
+    font-size: 16px
+}
+
+/*----------------------------------------*/
+/*---------------Destination Window -----------------*/
+/*----------------------------------------*/
+
+#w {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 180px;
+}
+
+.cardDestinaion {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height:350px;
+    border-radius: 10px;
+  }
+
+  .cardDestinaion img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  .info {
+    margin-top: 20px;
+    padding-left: 5px;
+  }
+
+  .location {
+    box-shadow: 0px 2px 7px black;
+  }
+
+  .locationew {
+    box-shadow: 0px 1px 7px  #e41c5d;
+  }
+
+  .nameLocation {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .timeToGo {
+    font-size: 16px;
+    color: rgb(107, 107, 107);
+  }
+
+
+
+/*----------------------------------------*/
+/*---------------Footer -----------------*/
+/*----------------------------------------*/
+
+
+#footer {
+
+    margin-top: 120px;
+    padding: 0px 130px;
+}
+
+
+
+
+@media (max-width: 576px) {
+ #searchBarBox{
+    transform: scale(0.7);
+    position: sticky;
+    top: 0;
+ }
+
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+}
+
+
+@media (max-width: 1400px) {
+    
+}

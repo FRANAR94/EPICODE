@@ -1,0 +1,273 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {ti 
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+* {
+    margin: 0;
+}
+
+body {
+    padding: 0 5vw;
+    font-family: "Montserrat", serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sezione-info, .contenitore-località, .sezione-appartamenti{
+    display: flex;
+    flex-direction: column;
+}
+
+.sezione-info {
+    margin: 40px 0;
+    row-gap: 20px;
+}
+
+.nome-località {
+    display: flex;
+    column-gap: 10px;
+}
+
+.tasto-aggiungi {
+    background-color: #e41d56;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tasto-aggiungi ion-icon {
+    color: white;
+}
+
+.contenitore-chips {
+    display: flex;
+    column-gap: 10px;
+}
+
+.chips {
+    background-color: #f8f9fa;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 25pt;
+}
+
+.sezione-appartamenti {
+    row-gap: 15px;
+}
+
+.contenitore-card-appartamenti {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 50px;
+    
+}
+
+.card-appartamenti {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 280px;
+    row-gap: 5px;
+    position: relative;
+}
+
+.contenitore-img-card {
+    width: 280px;
+    height: 210px;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.tasto-dietro {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e41d56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 32%;
+    left: 5%;
+    color: #f8f9fa;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.card-appartamenti:hover .tasto-dietro {
+    opacity: 1;
+}
+
+.tasto-dietro:hover {
+    transform: scale(1.15);
+}
+
+.tasto-avanti {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e41d56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 32%;
+    right: 5%;
+    color: #f8f9fa;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.card-appartamenti:hover .tasto-avanti {
+    opacity: 1;
+}
+
+.tasto-avanti:hover {
+    transform: scale(1.15);
+}
+
+.contenitore-img-card img {
+    width: 280px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10pt;
+}
+
+.recensioni-card {
+    display: flex;
+    column-gap: 6px;
+}
+
+.recensioni-card ion-icon {
+    color: #e41d56;
+}
+
+.recensioni-card ion-icon+p {
+    font-weight: 600;
+}
+
+.tipologia-appartamento {
+    display: flex;
+    column-gap: 5px;
+}
+
+/* MEDIA QUERY - MEDIA QUERY*/
+
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+    body {
+        padding: 0 6vw;
+        font-family: "Montserrat", serif;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+
+    .contenitore-card-appartamenti {
+        column-gap: 15px;
+        align-items: center;
+    }
+
+    .card-appartamenti {
+        width: 200px;
+        height: 200px;
+        row-gap: 5px;
+    }
+
+    .contenitore-img-card {
+        width: 200px;
+        height: 140px;
+        overflow-x: auto;scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE e Edge */
+    }
+
+    .contenitore-img-card::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    .tasto-avanti, .tasto-dietro { 
+        display: none;
+    }
+      
+    .contenitore-img-card img {
+        width: 200px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 10pt;
+    }
+
+    .recensioni-card, .tipologia-appartamento {
+        font-size: 0.8em;
+    }
+
+    .nome-appartamento-card {
+        font-size: 0.9em;
+    }
+
+    
+}
+
+@media only screen and (max-width: 496px) {
+    body {
+        padding: 0 8vw;
+        font-family: "Montserrat", serif;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+
+    .sezione-appartamenti {
+        margin: 0 auto;
+    }
+
+    .contenitore-card-appartamenti {
+        column-gap: 15px;
+        align-items: center;
+    }
+
+    .card-appartamenti {
+        width: 150px;
+        height: 150px;
+        row-gap: 5px;
+    }
+
+    .tasto-avanti, .tasto-dietro {
+        display: none;
+    } 
+
+    .contenitore-img-card {
+        width: 150px;
+        height: 105px;
+        overflow-x: auto;
+    }
+    
+    .contenitore-img-card img {
+        width: 150px;
+        height: 105px;
+        object-fit: cover;
+        border-radius: 5pt;
+    }
+
+    .recensioni-card, .tipologia-appartamento {
+        font-size: 0.7em;
+    }
+
+    .nome-appartamento-card, .chips {
+        font-size: 0.8em;
+    }
+}
